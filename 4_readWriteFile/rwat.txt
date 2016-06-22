@@ -1,0 +1,1 @@
+__Golang is a pleasant language(2)

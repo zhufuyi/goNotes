@@ -1,0 +1,1 @@
+Golang is a happy language(1)
