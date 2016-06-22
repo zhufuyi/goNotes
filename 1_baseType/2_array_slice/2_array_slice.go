@@ -6,7 +6,7 @@ import (
 
 func main() {
 	// 1.数组切片
-	var myArray [10]int = [12]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} //原始数组
+	var myArray [11]int = [12]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11} //原始数组
 	fmt.Println("myArray:", myArray)
 	var mySlice1 []int = myArray[:5] // 截取数组前5个元素
 	fmt.Println("mySlice1:", mySlice1)
