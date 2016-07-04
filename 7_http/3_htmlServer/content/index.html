@@ -1,0 +1,983 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-top:15.0pt;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	font-size:21.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:15.0pt;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	background:#E0EBF5;
+	font-size:15.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:normal;}
+h3
+	{mso-style-link:"标题 3 Char";
+	margin-top:15.0pt;
+	margin-right:3.75pt;
+	margin-bottom:15.0pt;
+	margin-left:3.75pt;
+	font-size:15.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+h4
+	{mso-style-link:"标题 4 Char";
+	margin-top:15.0pt;
+	margin-right:3.75pt;
+	margin-bottom:15.0pt;
+	margin-left:3.75pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#375EAB;
+	text-decoration:none none;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML 预设格式 Char";
+	margin:15.0pt;
+	line-height:16.8pt;
+	background:#EFEFEF;
+	font-size:10.5pt;
+	font-family:"Courier New";}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-link:"标题 1";
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:宋体;
+	color:#375EAB;
+	background:#E0EBF5;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-link:"标题 3";
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+span.4Char
+	{mso-style-name:"标题 4 Char";
+	mso-style-link:"标题 4";
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+span.HTMLChar
+	{mso-style-name:"HTML 预设格式 Char";
+	mso-style-link:"HTML 预设格式";
+	font-family:"Courier New";
+	background:#EFEFEF;}
+p.rootheading, li.rootheading, div.rootheading
+	{mso-style-name:rootheading;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:15.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	font-weight:bold;}
+p.pkg-dir, li.pkg-dir, div.pkg-dir
+	{mso-style-name:pkg-dir;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.pkg-name, li.pkg-name, div.pkg-name
+	{mso-style-name:pkg-name;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.alert, li.alert, div.alert
+	{mso-style-name:alert;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#AA0000;}
+p.top-heading, li.top-heading, div.top-heading
+	{mso-style-name:top-heading;
+	margin:15.0pt;
+	font-size:15.0pt;
+	font-family:宋体;}
+p.download, li.download, div.download
+	{mso-style-name:download;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.downloading, li.downloading, div.downloading
+	{mso-style-name:downloading;
+	margin:15.0pt;
+	text-align:center;
+	background:#F9F9BE;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.treeview, li.treeview, div.treeview
+	{mso-style-name:treeview;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.comment, li.comment, div.comment
+	{mso-style-name:comment;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.highlight, li.highlight, div.highlight
+	{mso-style-name:highlight;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.highlight-comment, li.highlight-comment, div.highlight-comment
+	{mso-style-name:highlight-comment;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-highlight, li.selection-highlight, div.selection-highlight
+	{mso-style-name:selection-highlight;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-highlight-comment, li.selection-highlight-comment, div.selection-highlight-comment
+	{mso-style-name:selection-highlight-comment;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection, li.selection, div.selection
+	{mso-style-name:selection;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-comment, li.selection-comment, div.selection-comment
+	{mso-style-name:selection-comment;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.ln, li.ln, div.ln
+	{mso-style-name:ln;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.text, li.text, div.text
+	{mso-style-name:text;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.collapsed, li.collapsed, div.collapsed
+	{mso-style-name:collapsed;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.expanded, li.expanded, div.expanded
+	{mso-style-name:expanded;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.stderr, li.stderr, div.stderr
+	{mso-style-name:stderr;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.system, li.system, div.system
+	{mso-style-name:system;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hitarea, li.hitarea, div.hitarea
+	{mso-style-name:hitarea;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hover, li.hover, div.hover
+	{mso-style-name:hover;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.placeholder, li.placeholder, div.placeholder
+	{mso-style-name:placeholder;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.lines, li.lines, div.lines
+	{mso-style-name:lines;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.input, li.input, div.input
+	{mso-style-name:input;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.output, li.output, div.output
+	{mso-style-name:output;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.buttons, li.buttons, div.buttons
+	{mso-style-name:buttons;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.code, li.code, div.code
+	{mso-style-name:code;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.playground, li.playground, div.playground
+	{mso-style-name:playground;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.big, li.big, div.big
+	{mso-style-name:big;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.desc, li.desc, div.desc
+	{mso-style-name:desc;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.popout, li.popout, div.popout
+	{mso-style-name:popout;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.toys, li.toys, div.toys
+	{mso-style-name:toys;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.1, li.1, div.1
+	{mso-style-name:标题1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.when, li.when, div.when
+	{mso-style-name:when;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.read, li.read, div.read
+	{mso-style-name:read;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.number, li.number, div.number
+	{mso-style-name:number;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.stdout, li.stdout, div.stdout
+	{mso-style-name:stdout;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.error, li.error, div.error
+	{mso-style-name:error;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.exit, li.exit, div.exit
+	{mso-style-name:exit;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.kill, li.kill, div.kill
+	{mso-style-name:kill;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+span.folder
+	{mso-style-name:folder;}
+span.file
+	{mso-style-name:file;}
+p.comment1, li.comment1, div.comment1
+	{mso-style-name:comment1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#006600;}
+p.highlight1, li.highlight1, div.highlight1
+	{mso-style-name:highlight1;
+	margin:15.0pt;
+	background:yellow;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.highlight-comment1, li.highlight-comment1, div.highlight-comment1
+	{mso-style-name:highlight-comment1;
+	margin:15.0pt;
+	background:yellow;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-highlight1, li.selection-highlight1, div.selection-highlight1
+	{mso-style-name:selection-highlight1;
+	margin:15.0pt;
+	background:yellow;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-highlight-comment1, li.selection-highlight-comment1, div.selection-highlight-comment1
+	{mso-style-name:selection-highlight-comment1;
+	margin:15.0pt;
+	background:yellow;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection1, li.selection1, div.selection1
+	{mso-style-name:selection1;
+	margin:15.0pt;
+	background:#FF9632;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.selection-comment1, li.selection-comment1, div.selection-comment1
+	{mso-style-name:selection-comment1;
+	margin:15.0pt;
+	background:#FF9632;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.ln1, li.ln1, div.ln1
+	{mso-style-name:ln1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#999999;}
+p.text1, li.text1, div.text1
+	{mso-style-name:text1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#375EAB;}
+p.text2, li.text2, div.text2
+	{mso-style-name:text2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#375EAB;
+	text-decoration:underline;}
+p.big1, li.big1, div.big1
+	{mso-style-name:big1;
+	margin:15.0pt;
+	font-size:15.0pt;
+	font-family:宋体;
+	font-weight:bold;}
+p.desc1, li.desc1, div.desc1
+	{mso-style-name:desc1;
+	margin-top:3.75pt;
+	margin-right:15.0pt;
+	margin-bottom:15.0pt;
+	margin-left:15.0pt;
+	font-size:10.5pt;
+	font-family:宋体;}
+p.popout1, li.popout1, div.popout1
+	{mso-style-name:popout1;
+	margin:15.0pt;
+	font-size:9.0pt;
+	font-family:宋体;}
+p.input1, li.input1, div.input1
+	{mso-style-name:input1;
+	margin-top:7.5pt;
+	margin-right:15.0pt;
+	margin-bottom:15.0pt;
+	margin-left:15.0pt;
+	background:#FFFFD8;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.output1, li.output1, div.output1
+	{mso-style-name:output1;
+	margin:15.0pt;
+	background:#FFFFD8;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.buttons1, li.buttons1, div.buttons1
+	{mso-style-name:buttons1;
+	margin:15.0pt;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.toys1, li.toys1, div.toys1
+	{mso-style-name:toys1;
+	margin-top:6.0pt;
+	margin-right:15.0pt;
+	margin-bottom:15.0pt;
+	margin-left:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.exit1, li.exit1, div.exit1
+	{mso-style-name:exit1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	display:none;}
+p.title1, li.title1, div.title1
+	{mso-style-name:title1;
+	margin:15.0pt;
+	font-size:15.0pt;
+	font-family:宋体;}
+p.title2, li.title2, div.title2
+	{mso-style-name:title2;
+	margin:15.0pt;
+	font-size:15.0pt;
+	font-family:宋体;}
+p.when1, li.when1, div.when1
+	{mso-style-name:when1;
+	margin:15.0pt;
+	font-size:10.5pt;
+	font-family:宋体;
+	color:#666666;}
+p.read1, li.read1, div.read1
+	{mso-style-name:read1;
+	margin:15.0pt;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.collapsed1, li.collapsed1, div.collapsed1
+	{mso-style-name:collapsed1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.expanded1, li.expanded1, div.expanded1
+	{mso-style-name:expanded1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	display:none;}
+p.collapsed2, li.collapsed2, div.collapsed2
+	{mso-style-name:collapsed2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	display:none;}
+p.expanded2, li.expanded2, div.expanded2
+	{mso-style-name:expanded2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.lines1, li.lines1, div.lines1
+	{mso-style-name:lines1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:"Courier New";}
+p.input2, li.input2, div.input2
+	{mso-style-name:input2;
+	margin-top:7.5pt;
+	margin-right:15.0pt;
+	margin-bottom:15.0pt;
+	margin-left:15.0pt;
+	background:#FFFFD8;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.output2, li.output2, div.output2
+	{mso-style-name:output2;
+	margin:15.0pt;
+	background:#FFFFD8;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.buttons2, li.buttons2, div.buttons2
+	{mso-style-name:buttons2;
+	margin:15.0pt;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.stderr1, li.stderr1, div.stderr1
+	{mso-style-name:stderr1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#993333;}
+p.system1, li.system1, div.system1
+	{mso-style-name:system1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#999999;}
+p.code1, li.code1, div.code1
+	{mso-style-name:code1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.output3, li.output3, div.output3
+	{mso-style-name:output3;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.number1, li.number1, div.number1
+	{mso-style-name:number1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#999999;}
+p.number2, li.number2, div.number2
+	{mso-style-name:number2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#999999;}
+p.code2, li.code2, div.code2
+	{mso-style-name:code2;
+	margin:15.0pt;
+	background:#E9E9E9;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.playground1, li.playground1, div.playground1
+	{mso-style-name:playground1;
+	margin:15.0pt;
+	background:#E9E9E9;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.output4, li.output4, div.output4
+	{mso-style-name:output4;
+	margin:15.0pt;
+	background:#202020;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.stdout1, li.stdout1, div.stdout1
+	{mso-style-name:stdout1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#E6E6E6;}
+p.stderr2, li.stderr2, div.stderr2
+	{mso-style-name:stderr2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#F44A3F;}
+p.error1, li.error1, div.error1
+	{mso-style-name:error1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#F44A3F;}
+p.system2, li.system2, div.system2
+	{mso-style-name:system2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#FFD14D;}
+p.exit2, li.exit2, div.exit2
+	{mso-style-name:exit2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:#FFD14D;}
+p.buttons3, li.buttons3, div.buttons3
+	{mso-style-name:buttons3;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.kill1, li.kill1, div.kill1
+	{mso-style-name:kill1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	display:none;}
+p.hitarea1, li.hitarea1, div.hitarea1
+	{mso-style-name:hitarea1;
+	margin-top:15.0pt;
+	margin-right:15.0pt;
+	margin-bottom:15.0pt;
+	margin-left:-12.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hover1, li.hover1, div.hover1
+	{mso-style-name:hover1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	color:red;}
+p.hitarea2, li.hitarea2, div.hitarea2
+	{mso-style-name:hitarea2;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hitarea3, li.hitarea3, div.hitarea3
+	{mso-style-name:hitarea3;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hitarea4, li.hitarea4, div.hitarea4
+	{mso-style-name:hitarea4;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.hitarea5, li.hitarea5, div.hitarea5
+	{mso-style-name:hitarea5;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+p.placeholder1, li.placeholder1, div.placeholder1
+	{mso-style-name:placeholder1;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+span.folder1
+	{mso-style-name:folder1;
+	display:none;}
+span.file1
+	{mso-style-name:file1;
+	display:none;}
+span.folder2
+	{mso-style-name:folder2;
+	display:none;}
+span.z-Char
+	{mso-style-name:"z-窗体顶端 Char";
+	mso-style-link:z-窗体顶端;
+	font-family:"Arial","sans-serif";
+	display:none;}
+span.z-Char0
+	{mso-style-name:"z-窗体底端 Char";
+	mso-style-link:z-窗体底端;
+	font-family:"Arial","sans-serif";
+	display:none;}
+span.comment2
+	{mso-style-name:comment2;
+	color:#006600;}
+p.exampleheading, li.exampleheading, div.exampleheading
+	{mso-style-name:exampleheading;
+	margin:15.0pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+span.text3
+	{mso-style-name:text3;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.95pt 42.0cm;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link="#375EAB" vlink="#954F72" style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>Package
+http provides HTTP client and server implementations. </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>Get,
+Head, Post, and PostForm make HTTP (or HTTPS) requests: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := http.Get(&quot;</span><span lang=EN-US><a href="http://example.com/"><span
+style='font-family:"Courier New"'>http://example.com/</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := http.Post(&quot;</span><span lang=EN-US><a
+href="http://example.com/upload"><span style='font-family:"Courier New"'>http://example.com/upload</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;,
+&quot;image/jpeg&quot;, &amp;buf)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := http.PostForm(&quot;</span><span lang=EN-US><a
+href="http://example.com/form"><span style='font-family:"Courier New"'>http://example.com/form</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; url.Values{&quot;key&quot;:
+{&quot;Value&quot;}, &quot;id&quot;: {&quot;123&quot;}})</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>The
+client must close the response body when finished with it: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := http.Get(&quot;</span><span lang=EN-US><a href="http://example.com/"><span
+style='font-family:"Courier New"'>http://example.com/</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>if
+err != nil {</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; //
+handle error</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>}</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>defer
+resp.Body.Close()</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>body,
+err := ioutil.ReadAll(resp.Body)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>//
+...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>For
+control over HTTP client headers, redirect policy, and other settings, create a
+Client: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>client
+:= &amp;http.Client{</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; CheckRedirect:
+redirectPolicyFunc,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>}</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := client.Get(&quot;</span><span lang=EN-US><a href="http://example.com/"><span
+style='font-family:"Courier New"'>http://example.com</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>//
+...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>req,
+err := http.NewRequest(&quot;GET&quot;, &quot;</span><span lang=EN-US><a
+href="http://example.com/"><span style='font-family:"Courier New"'>http://example.com</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;, nil)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>//
+...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>req.Header.Add(&quot;If-None-Match&quot;,
+`W/&quot;wyzzy&quot;`)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := client.Do(req)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>//
+...</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>For
+control over proxies, TLS configuration, keep-alives, compression, and other
+settings, create a Transport: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>tr :=
+&amp;http.Transport{</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; TLSClientConfig:&nbsp;&nbsp;&nbsp;
+&amp;tls.Config{RootCAs: pool},</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; DisableCompression:
+true,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>}</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>client
+:= &amp;http.Client{Transport: tr}</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>resp,
+err := client.Get(&quot;</span><span lang=EN-US><a href="https://example.com/"><span
+style='font-family:"Courier New"'>https://example.com</span></a></span><span
+lang=EN-US style='font-family:"Courier New";color:#222222'>&quot;)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>Clients
+and Transports are safe for concurrent use by multiple goroutines and for
+efficiency should only be created once and re-used. </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>ListenAndServe
+starts an HTTP server with a given address and handler. The handler is usually
+nil, which means to use DefaultServeMux. Handle and HandleFunc add handlers to
+DefaultServeMux: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>http.Handle(&quot;/foo&quot;,
+fooHandler)</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>http.HandleFunc(&quot;/bar&quot;,
+func(w http.ResponseWriter, r *http.Request) {</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; fmt.Fprintf(w,
+&quot;Hello, %q&quot;, html.EscapeString(r.URL.Path))</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>})</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>log.Fatal(http.ListenAndServe(&quot;:8080&quot;,
+nil))</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>More
+control over the server's behavior is available by creating a custom Server: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>s :=
+&amp;http.Server{</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; Addr:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;:8080&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; Handler:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+myHandler,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; ReadTimeout:&nbsp;&nbsp;&nbsp;
+10 * time.Second,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; WriteTimeout:&nbsp;&nbsp;
+10 * time.Second,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>&nbsp;&nbsp;&nbsp;&nbsp; MaxHeaderBytes:
+1 &lt;&lt; 20,</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>}</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>log.Fatal(s.ListenAndServe())</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>The
+http package has transparent support for the HTTP/2 protocol when using HTTPS.
+Programs that must disable HTTP/2 can do so by setting Transport.TLSNextProto
+(for clients) or Server.TLSNextProto (for servers) to a non-nil, empty map.
+Alternatively, the following GODEBUG environment variables are currently
+supported: </span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>GODEBUG=http2client=0&nbsp;
+# disable HTTP/2 client support</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>GODEBUG=http2server=0&nbsp;
+# disable HTTP/2 server support</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>GODEBUG=http2debug=1&nbsp;&nbsp;
+# enable verbose HTTP/2 debug logs</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left;background:
+#EFEFEF'><span lang=EN-US style='font-family:"Courier New";color:#222222'>GODEBUG=http2debug=2&nbsp;&nbsp;
+# ... even more verbose, with frame dumps</span></p>
+
+<p class=MsoNormal align=left style='margin:15.0pt;text-align:left'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>The
+GODEBUG variables are not covered by Go's API compatibility promise. HTTP/2
+support was added in Go 1.6. Please report any issues instead of disabling
+HTTP/2 support: </span><span lang=EN-US><a href="https://golang.org/s/http2bug"><span
+style='font-size:12.0pt;font-family:"Arial","sans-serif"'>https://golang.org/s/http2bug</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif";color:#222222'>
+</span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

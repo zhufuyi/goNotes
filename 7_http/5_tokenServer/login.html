@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+	<form method="post" ation="http://127.0.0.1:8080/login">
+		<label>用户名：
+			<input type="text" name="usr" value="">
+		</label><br>
+		<label>密&nbsp码：
+			<input type="password" name="pwd" value="">
+		</label><br>	
+		<input type="hidden" name="token" value="{{.}}">
+		<button type="submit">登录</button>
+	</form>
+</body>
+
+</html>
