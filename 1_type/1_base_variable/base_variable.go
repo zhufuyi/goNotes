@@ -236,6 +236,7 @@ func getRGB() (red, green, blue uint8) {
 	return 255, 0, 255 // 紫色
 }
 
+// 匿名变量
 func anonymousType(info string) {
 	fmt.Printf("\n\n------------------------ %s ------------------------\n", info)
 
