@@ -182,12 +182,14 @@ func arrayType(info string) {
 	array2[0][2] = 3333
 	array3[2] = "曹操"
 
-	fmt.Printf("array1 = %v\narray2 = %v\narray3 = %q\v", array1, array2, array3)
+	array4 := [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10} // [...]表示由定义的元素个数来定数组的长度，数组长度10
+	fmt.Printf("array1 = %v\narray2 = %v\narray3 = %q\narray4 = %v\n", array1, array2, array3, array4)
 
 	// 结果：
 	// array1 = [1 2 33333 4 5]
 	// array2 = [[1 2 3333 4] [5 6 7 8]]
 	// array3 = ["张飞" "关羽" "曹操" "赵云" "黄忠"]
+	// array4 = [1 2 3 4 5 6 7 8 9 10]
 }
 
 func division(x int, y int) (int, error) { // 除法
