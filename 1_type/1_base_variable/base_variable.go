@@ -29,22 +29,11 @@ import (
 	"fmt"
 )
 
-// 多个变量或者多个常量可以用括号声明
-/*const(
-    n = 11
-    str = "你好，golang!"
-)
-var(
-    m int
-    ui string
-    name float32
-)*/
-
 // 常量
 func constType(info string) {
 	fmt.Printf("\n\n------------------------ %s ------------------------\n", info)
 
-	const (
+	const ( // 多个变量或者多个常量可以用括号声明
 		Pi   = 3.14
 		Ip   = "192.168.1.111"
 		Port = 8080
@@ -116,9 +105,10 @@ func integerType(info string) {
 	var v10 uint32 = 4294967295
 	var v11 int64 = 9223372036854775807
 	var v12 uint64 = 18446744073709551615
-	fmt.Println(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12)
+	var v13 byte = 'g'
+	fmt.Println(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13)
 
-	// 结果：1 1 1 1 127 255 32767 65535 2147483647 4294967295 9223372036854775807 18446744073709551615
+	// 结果：1 1 1 1 127 255 32767 65535 2147483647 4294967295 9223372036854775807 18446744073709551615 103
 }
 
 // 布尔类型
@@ -140,7 +130,7 @@ func floatType(info string) {
 	var pi float32 = 3.14159
 	var v float64 = 10.0 / 3
 
-	fmt.Printf("%.2f, %.3f\n", pi, v)
+	fmt.Printf("%.2f, %.3f\n", pi, v) // %.2f表示是保留2位小数点
 
 	// 结果：3.14, 3.333
 }
@@ -154,7 +144,7 @@ func stringType(info string) {
 	str3 := str1 + ", " + str2
 
 	ch := str1[0]
-	runeT := rune('龙') // rune类型
+	runeT := rune('人') // rune类型
 	str4 := str2 + string(runeT)
 
 	fmt.Printf("str1 = %s\nstr2 = %s\nstr3 = %s\nstr4 = %s\n", str1, str2, str3, str4)
@@ -164,7 +154,7 @@ func stringType(info string) {
 	// str1 = hello golang
 	// str2 = 中国
 	// str3 = hello golang, 中国
-	// str4 = 中国龙
+	// str4 = 中国人
 	// ch1 = h
 }
 
@@ -248,6 +238,25 @@ func anonymousType(info string) {
 	// 结果：red = 255 , blue = 255
 }
 
+// 指针
+func pointerType(info string) {
+	fmt.Printf("\n\n------------------------ %s ------------------------\n", info)
+
+	x := 1
+	px := &x
+	*px = 10
+	fmt.Printf("x=%d, px=%p\n", x, px)
+
+	ppx := &px
+	**ppx = 100
+	fmt.Printf("x=%d, *ppx=%p, ppx=%p\n", x, *ppx, ppx)
+
+	// 结果：
+	// x=10, px=0xc0820365b0
+	// x=100, *ppx=0xc0820365b0, ppx=0xc082056020
+
+}
+
 func main() {
 	constType("常量")
 	integerType("整型")
@@ -258,4 +267,5 @@ func main() {
 	arrayType("数组类型")
 	errorType("错误类型")
 	anonymousType("匿名变量")
+	pointerType("指针类型")
 }
