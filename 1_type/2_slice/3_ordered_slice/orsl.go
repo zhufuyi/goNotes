@@ -40,7 +40,7 @@ func NewSlice(cf CompareFunction, et reflect.Type) SliceOrder {
 	}
 }
 
-// 字典元素个数
+// slice元素个数
 func (sl *slicer) Len() int {
 	return len(sl.container)
 }
