@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"sort"
+	"strings"
 )
 
 // 对外接口
@@ -26,7 +27,7 @@ type StrSlice struct {
 
 // 比较函数
 var compareFunc = func(str1, str2 string) int {
-	return bytes.Compare([]byte(str1), []byte(str2))
+	return strings.Compare(str1, str2)
 }
 
 // 实例化
