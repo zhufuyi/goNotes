@@ -49,6 +49,14 @@ func selectChan(uch chan string, info string) {
 	sendCmd1(uch, "bye", 10)
 	close(uch) // 关闭通道
 	<-exit
+
+	// 结果：
+	// cmd = read
+	// cmd = write
+	// cmd = update
+	// cmd = delete
+	// cmd = insert
+	// cmd = bye
 }
 
 //----------------------------------------------------------------------------------------------
@@ -83,7 +91,16 @@ func forRangeChan(uch chan string, info string) {
 
 	close(uch) // 关闭通道
 	<-exit     // 等待退出
+
+	// 结果：
+	// cmd = cp
+	// cmd = touch
+	// cmd = cd
+	// cmd = rm
+	// cmd = mv
+	// cmd = bye
 }
+
 func main() {
 	uch := make(chan string) // 初始化
 	selectChan(uch, "select方式接收数据")
