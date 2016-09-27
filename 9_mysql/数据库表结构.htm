@@ -1,0 +1,989 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@微软雅黑";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+
+#control{
+    width:750px;
+    margin:0 auto;
+    border:1px solid gray;
+    padding:30px;
+}
+
+#navid{
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	float: right;
+    background-color: lightcyan;
+}
+#navid table a{
+	padding: 15px;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 40px;
+	text-decoration: none;
+}
+
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	line-height:240%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"标题 3 Char";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	line-height:173%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+h4
+	{mso-style-link:"标题 4 Char";
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	line-height:156%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+h5
+	{mso-style-link:"标题 5 Char";
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	line-height:156%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+h6
+	{mso-style-link:"标题 6 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	line-height:133%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"标题 7 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	line-height:133%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"标题 8 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	line-height:133%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light","sans-serif";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"标题 9 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	line-height:133%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:132%;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Calibri Light","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"标题 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:132%;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"副标题 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:130%;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"纯文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:宋体;}
+p
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML 预设格式 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:9.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:21.0pt;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"引用 Char";
+	margin-top:10.0pt;
+	margin-right:43.2pt;
+	margin-bottom:8.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	line-height:132%;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"明显引用 Char";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	line-height:132%;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Verdana","sans-serif";
+	color:#5B9BD5;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{color:#404040;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#5B9BD5;
+	font-style:italic;}
+span.MsoSubtleReference
+	{font-variant:small-caps;
+	color:#5A5A5A;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#5B9BD5;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.MsoBookTitle
+	{letter-spacing:.25pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	line-height:240%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Verdana","sans-serif";
+	font-weight:bold;}
+
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-link:页眉;
+	font-family:"Times New Roman","serif";}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-link:页脚;
+	font-family:"Times New Roman","serif";}
+span.HTMLChar
+	{mso-style-name:"HTML 预设格式 Char";
+	mso-style-link:"HTML 预设格式";
+	font-family:"Courier New";}
+span.sc51
+	{mso-style-name:sc51;
+	font-family:"Courier New";
+	color:#66D9EF;}
+span.sc0
+	{mso-style-name:sc0;
+	font-family:"Courier New";
+	color:#F8F8F2;}
+span.sc11
+	{mso-style-name:sc11;
+	font-family:"Courier New";
+	color:#F8F8F2;}
+span.sc101
+	{mso-style-name:sc101;
+	font-family:"Courier New";
+	color:#F92672;}
+span.sc61
+	{mso-style-name:sc61;
+	font-family:"Courier New";
+	color:#E6DB74;}
+span.sc21
+	{mso-style-name:sc21;
+	font-family:"Courier New";
+	color:#75715E;}
+span.Char1
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;
+	font-family:"Times New Roman","serif";}
+
+span.Char2
+	{mso-style-name:"标题 Char";
+	mso-style-link:标题;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+span.Char3
+	{mso-style-name:"副标题 Char";
+	mso-style-link:副标题;
+	font-family:"Calibri Light","sans-serif";
+	font-weight:bold;}
+span.Char4
+	{mso-style-name:"引用 Char";
+	mso-style-link:引用;
+	font-family:"Times New Roman","serif";
+	color:#404040;
+	font-style:italic;}
+span.Char5
+	{mso-style-name:"明显引用 Char";
+	mso-style-link:明显引用;
+	font-family:"Times New Roman","serif";
+	color:#5B9BD5;
+	font-style:italic;}
+span.fontblue
+	{mso-style-name:font_blue;}
+span.Char6
+	{mso-style-name:"纯文本 Char";
+	mso-style-link:纯文本;
+	font-family:宋体;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Verdana","sans-serif";}
+.MsoPapDefault
+	{line-height:132%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:21.0cm 841.95pt;
+	margin:53.85pt 72.0pt 53.85pt 72.0pt;
+	layout-grid:16.3pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:punctuation'>
+<div id="control">
+<div id="navid">
+    <table>
+        <tr>
+            <td><a href="#market">市场分类表</a></td>
+        </tr>
+        <tr>
+            <td><a href="#credibility">信用等级表</a></td>
+        </tr>
+         <tr>
+            <td><a href="#seller">卖家信息表</a></td>
+        </tr>  
+          <tr>
+            <td><a href="#goods">商品表</a></td>
+        </tr>           
+    </table>
+</div>
+<div class=WordSection1 style='layout-grid:16.3pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
+style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>数据库</span></b><b><span
+style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表结构</span></b></p>
+
+<p class=MsoNoSpacing><span lang=EN-US>&nbsp;</span></p>
+
+<a name="market"></a>
+<h1><span style='font-family:黑体'>市场分类表</span><span lang=EN-US>(market_group)</span></h1>
+
+<table class=MsoTable15List4Accent3 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid #A5A5A5 1.0pt;border-right:none;
+  background:#A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>列名</span></b></p>
+  </td>
+  <td valign=top style='border-top:solid #A5A5A5 1.0pt;border-left:none;
+  border-bottom:solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>类型</span></b></p>
+  </td>
+  <td valign=top style='border:solid #A5A5A5 1.0pt;border-left:none;background:
+  #A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>说明</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border-top:none;border-left:solid #C9C9C9 1.0pt;
+  border-bottom:solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>id</span></b></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid #C9C9C9 1.0pt;
+  background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>int</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>主键</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border-top:none;border-left:solid #C9C9C9 1.0pt;
+  border-bottom:solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>name</span></b></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid #C9C9C9 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>char(30)</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>市场分类名称</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=484 valign=top style='width:290.35pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal;background:#272822'><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
+  TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>marketgroup(<br>
+  &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; name</span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'> CHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>20</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>UNIQUE<br>
+  </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>)</span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#F92672'>ENGINE </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>myisam </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CHARSET </span><i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#66D9EF'>utf8</span></i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<a name="credibility"></a>
+<h1><span style='font-family:黑体'>信用等级表</span><span lang=EN-US>(credibility)</span></h1>
+
+<table class=MsoTable15List4Accent3 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid #A5A5A5 1.0pt;border-right:none;
+  background:#A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>列名</span></b></p>
+  </td>
+  <td valign=top style='border-top:solid #A5A5A5 1.0pt;border-left:none;
+  border-bottom:solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>类型</span></b></p>
+  </td>
+  <td valign=top style='border:solid #A5A5A5 1.0pt;border-left:none;background:
+  #A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span style='font-family:宋体;
+  color:white'>说明</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border-top:none;border-left:solid #C9C9C9 1.0pt;
+  border-bottom:solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>id</span></b></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid #C9C9C9 1.0pt;
+  background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>int</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>主键</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border-top:none;border-left:solid #C9C9C9 1.0pt;
+  border-bottom:solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>name</span></b></p>
+  </td>
+  <td valign=top style='border:none;border-bottom:solid #C9C9C9 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>tinyint</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>信用值</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=472 valign=top style='width:283.25pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal;background:#272822'><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
+  TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>credibility(<br>
+  &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; name</span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'> CHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>20</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>UNIQUE<br>
+  </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>)</span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#F92672'>ENGINE </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>myisam </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CHARSET </span><i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#66D9EF'>utf8</span></i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<a name="seller"></a>
+<h1><span style='font-family:黑体'>卖家信息表</span><span lang=EN-US>(seller)</span></h1>
+
+<table class=MsoTable15List4Accent3 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td style='border:solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>列名</span></p>
+  </td>
+  <td style='border-top:solid #A5A5A5 1.0pt;border-left:none;border-bottom:
+  solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>类型</span></p>
+  </td>
+  <td style='border:solid #A5A5A5 1.0pt;border-left:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>说明</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>id</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>id int</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>主键</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>name</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(20)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>卖家名称</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>addr</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(50)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>所在地址</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>shop_site</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(100)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺地址</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>credit_val</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>tinyint</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>信用值</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>shop_score</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>float</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺评分</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=519 valign=top style='width:311.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal;background:#272822'><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
+  TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>seller(<br>
+  &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; name</span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'> VARCHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>20</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>UNIQUE </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; addr </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>VARCHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>50</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>''</span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; shop_site </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>VARCHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>100</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>UNIQUE</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; credit_val </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>TINYINT UNSIGNED NOT NULL DEFAULT </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; shop_score </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>FLOAT NOT NULL DEFAULT </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0.0</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>addr(addr),<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>credit_val(credit_val),<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>shop_score(shop_score)<br>
+  )</span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F92672'>ENGINE </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>myisam </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CHARSET </span><i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#66D9EF'>utf8</span></i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<a name="goods"></a>
+<h1><span style='font-family:黑体'>商品表</span><span lang=EN-US>(goods)</span></h1>
+
+<table class=MsoTable15List4Accent3 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td style='border:solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>列名</span></p>
+  </td>
+  <td style='border-top:solid #A5A5A5 1.0pt;border-left:none;border-bottom:
+  solid #A5A5A5 1.0pt;border-right:none;background:#A5A5A5;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>类型</span></p>
+  </td>
+  <td style='border:solid #A5A5A5 1.0pt;border-left:none;background:#A5A5A5;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体;
+  color:white'>说明</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>id</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>id int</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>主键</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>seller_id</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(20)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>卖家</span><span
+  lang=EN-US>id</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>market_id</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>int</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+  style='font-family:宋体'>市场分类</span><span lang=EN-US>id</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>goods_name</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(30)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>商品名称</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>goods_site</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(100)</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>商品网址</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
+  solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>goods_praise</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span lang=EN-US>float</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
+  border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>商品好评度</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=519 valign=top style='width:311.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:normal;background:#272822'><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
+  TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F8F8F2'>goods(<br>
+  &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; seller_id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED NOT NULL DEFAULT </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; market_id </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>INT UNSIGNED NOT NULL DEFAULT </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; goods_name </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>CHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>30</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>''</span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; goods_site </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>VARCHAR</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>100</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>) </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>NOT
+  NULL DEFAULT </span><span lang=EN-US style='font-size:10.5pt;font-family:
+  Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>UNIQUE</span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; goods_praise </span><span lang=EN-US style='font-size:
+  10.5pt;font-family:Consolas;color:#F92672'>FLOAT NOT NULL DEFAULT </span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0.0</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>seller_id(seller_id),<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>market_id(market_id),<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>goods_praise(goods_praise),<br>
+  &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>goods_name(goods_name(</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>10</span><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>))<br>
+  )</span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
+  color:#F92672'>ENGINE </span><span lang=EN-US style='font-size:10.5pt;
+  font-family:Consolas;color:#F8F8F2'>myisam </span><span lang=EN-US
+  style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CHARSET </span><i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#66D9EF'>utf8</span></i><span
+  lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+</div>
+</body>
+
+</html>
