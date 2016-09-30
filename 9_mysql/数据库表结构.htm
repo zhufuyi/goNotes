@@ -412,7 +412,7 @@ div.WordSection1
             <td><a href="#credibility">信用等级表</a></td>
         </tr>
          <tr>
-            <td><a href="#seller">卖家信息表</a></td>
+            <td><a href="#shop">店铺信息表</a></td>
         </tr>  
           <tr>
             <td><a href="#goods">商品表</a></td>
@@ -490,7 +490,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   <p class=MsoNormal style='line-height:normal;background:#272822'><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
   TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
-  color:#F8F8F2'>marketgroup(<br>
+  color:#F8F8F2'>market(<br>
   &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
@@ -566,7 +566,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   </td>
   <td valign=top style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>信用值</span></p>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺信用等级</span></p>
   </td>
  </tr>
 </table>
@@ -611,8 +611,8 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
-<a name="seller"></a>
-<h1><span style='font-family:黑体'>卖家信息表</span><span lang=EN-US>(seller)</span></h1>
+<a name="shop"></a>
+<h1><span style='font-family:黑体'>店铺信息表</span><span lang=EN-US>(shop)</span></h1>
 
 <table class=MsoTable15List4Accent3 border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
@@ -657,7 +657,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>卖家名称</span></p>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺名称</span></p>
   </td>
  </tr>
  <tr>
@@ -671,7 +671,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>所在地址</span></p>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺地址</span></p>
   </td>
  </tr>
  <tr>
@@ -684,13 +684,13 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺地址</span></p>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺网址</span></p>
   </td>
  </tr>
  <tr>
   <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
   solid #C9C9C9 1.0pt;border-right:none;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>credit_val</span></b></p>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>shop_credit</span></b></p>
   </td>
   <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;background:#EDEDED;
   padding:0cm 5.4pt 0cm 5.4pt'>
@@ -698,7 +698,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;background:#EDEDED;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>信用值</span></p>
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺信用等级</span></p>
   </td>
  </tr>
  <tr>
@@ -725,7 +725,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   <p class=MsoNormal style='line-height:normal;background:#272822'><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F92672'>CREATE
   TABLE </span><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
-  color:#F8F8F2'>seller(<br>
+  color:#F8F8F2'>shop(<br>
   &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
@@ -758,7 +758,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   Consolas;color:#E6DB74'>'' </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>UNIQUE</span><span lang=EN-US
   style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
-  &nbsp;&nbsp;&nbsp; credit_val </span><span lang=EN-US style='font-size:10.5pt;
+  &nbsp;&nbsp;&nbsp; shop_credit </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>TINYINT UNSIGNED NOT NULL DEFAULT </span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0</span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
@@ -771,7 +771,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>addr(addr),<br>
   &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
-  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>credit_val(credit_val),<br>
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>shop_credit(shop_credit),<br>
   &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
   style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>shop_score(shop_score)<br>
@@ -828,14 +828,14 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
  <tr>
   <td style='border-top:none;border-left:solid #C9C9C9 1.0pt;border-bottom:
   solid #C9C9C9 1.0pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>seller_id</span></b></p>
+  <p class=MsoNormal style='line-height:200%'><b><span lang=EN-US>shop_id</span></b></p>
   </td>
   <td style='border:none;border-bottom:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal style='line-height:200%'><span lang=EN-US>varchar(20)</span></p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid #C9C9C9 1.0pt;
   border-right:solid #C9C9C9 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>卖家</span><span
+  <p class=MsoNormal style='line-height:200%'><span style='font-family:宋体'>店铺</span><span
   lang=EN-US>id</span></p>
   </td>
  </tr>
@@ -909,7 +909,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   &nbsp;&nbsp;&nbsp; id </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>INT UNSIGNED PRIMARY KEY AUTO_INCREMENT</span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
-  &nbsp;&nbsp;&nbsp; seller_id </span><span lang=EN-US style='font-size:10.5pt;
+  &nbsp;&nbsp;&nbsp; shop_id </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>INT UNSIGNED NOT NULL DEFAULT </span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#AE81FF'>0</span><span
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
@@ -942,7 +942,7 @@ style='font-size:22.0pt;line-height:132%;font-family:"微软雅黑","sans-serif"'>表
   lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>,<br>
   &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
-  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>seller_id(seller_id),<br>
+  style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>shop_id(shop_id),<br>
   &nbsp;&nbsp;&nbsp; </span><span lang=EN-US style='font-size:10.5pt;
   font-family:Consolas;color:#F92672'>KEY </span><span lang=EN-US
   style='font-size:10.5pt;font-family:Consolas;color:#F8F8F2'>market_id(market_id),<br>
