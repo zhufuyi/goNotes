@@ -17,4 +17,7 @@ func main() {
 
 	fmt.Println("\n\n------ 比较三种读取文件的速度：")
 	rwEg.ReadRateCompare()
+	
+	fmt.Println("\n\n------ 获取文件夹下的文件列表：")
+	rwEg.GetFileList()
 }
