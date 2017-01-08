@@ -4,6 +4,8 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"math/rand"
+	"time"
 )
 
 // 比较两个slice顺序
@@ -246,6 +248,54 @@ func join(info string) {
 	// 结果：hello_golang
 }
 
+// 去除重复元素，返回去除重复后的slice和重复的元素
+func removeDuplicate(info string) ([]string, []string) {
+	fmt.Printf("\n\n----------------- %s -----------------\n", info)
+	slice := []string{"a", "b", "c", "a", "d", "e", "c"}
+	var x []string
+	var duplicate []string
+	for _, i := range slice {
+		if len(x) == 0 {
+			x = append(x, i)
+		} else {
+			for k, v := range x {
+				if i == v {
+					duplicate = append(duplicate, v)
+					break
+				}
+				if k == len(x)-1 {
+					x = append(x, i)
+				}
+			}
+		}
+	}
+	fmt.Println(x, "\n", duplicate)
+	return x, duplicate
+
+	// 结果：
+	// 去除重复后：[a b c d e]
+	// 重复的元素：[a c]
+}
+
+// 打乱顺序
+func randSlice(info string) []string {
+	fmt.Printf("\n\n----------------- %s -----------------\n", info)
+
+	slice := []string{"a", "b", "c", "e", "f", "g"}
+	rt := rand.New(rand.NewSource(time.Now().UnixNano()))
+	randV := rt.Perm(len(slice))
+	randSlice := make([]string, len(slice))
+	for k, _ := range slice {
+		randSlice[k] = slice[randV[k]]
+	}
+	fmt.Println(randSlice)
+
+	return randSlice
+
+	// 结果：
+	// 随机一个结果：[g c e f a b]
+}
+
 func main() {
 	compare("比较两个slice的顺序")
 	equal("判断两个slice是否相等")
@@ -261,4 +311,6 @@ func main() {
 	fields("以空白间隔拆分slice")
 	split("slice拆分")
 	join("二维slice以指定的分割符连接为一维的slice")
+	removeDuplicate("去除相同的元素")
+	randSlice("打乱slice元素的顺序")
 }
