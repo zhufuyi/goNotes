@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package login;
+
+// 接口，grpc的客户端和服务端都实现的方法
+service Loginer {
+  rpc Login (LoginRequest) returns (LoginReply) {}
+}
+
+// grpc客户端请求时传输给服务端的对象
+message LoginRequest {
+  string username = 1;	// 用户名
+  string password = 2;	// 密码
+}
+
+// grpc服务端返回给客户端的对象
+message LoginReply {
+  bool status = 1;	// 登录是否成功
+  string errorMsg = 2;	// 登录失败时的信息
+}
