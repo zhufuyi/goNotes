@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
+	"sort"
 )
 
 // 比较两个slice顺序
@@ -248,35 +249,6 @@ func join(info string) {
 	// 结果：hello_golang
 }
 
-// 去除重复元素，返回去除重复后的slice和重复的元素
-func removeDuplicate(info string) ([]string, []string) {
-	fmt.Printf("\n\n----------------- %s -----------------\n", info)
-	slice := []string{"a", "b", "c", "a", "d", "e", "c"}
-	var x []string
-	var duplicate []string
-	for _, i := range slice {
-		if len(x) == 0 {
-			x = append(x, i)
-		} else {
-			for k, v := range x {
-				if i == v {
-					duplicate = append(duplicate, v)
-					break
-				}
-				if k == len(x)-1 {
-					x = append(x, i)
-				}
-			}
-		}
-	}
-	fmt.Println(x, "\n", duplicate)
-	return x, duplicate
-
-	// 结果：
-	// 去除重复后：[a b c d e]
-	// 重复的元素：[a c]
-}
-
 // 打乱顺序
 func randSlice(info string) []string {
 	fmt.Printf("\n\n----------------- %s -----------------\n", info)
@@ -296,6 +268,68 @@ func randSlice(info string) []string {
 	// 随机一个结果：[g c e f a b]
 }
 
+
+// RemoveDuplicate1 删除slice的重复元素。
+func RemoveDuplicate1(slice []string) []string {
+	uniqueSlice := []string{}
+	isDup := false
+
+	for _, v := range slice {
+		isDup = false
+		for _, val := range uniqueSlice {
+			if val == v {
+				isDup = true
+				break
+			}
+		}
+
+		if !isDup {
+			uniqueSlice = append(uniqueSlice, v)
+		}
+	}
+
+	return uniqueSlice
+
+	// 结果：[a e c d b]
+}
+
+// RemoveDuplicate2 删除slice的重复元素。
+// 思路：从slice的索引i开始，索引i和大于i的索引对应值逐个比较，如果值相等，
+// 删除大于索引i对应的值，如果不相等，i+1，继续和大于i+1的索引对应值比较，直到索引i到最后一个索引时，结束循环。
+func RemoveDuplicate2(slice []string) int {
+	for i := 0; i < len(slice); i++ {
+		for j := i + 1; j < len(slice); {
+			if slice[i] == slice[j] {
+				slice = append(slice[:j], slice[j+1:]...)
+			} else {
+				j++
+			}
+		}
+	}
+
+	return len(slice)
+
+	// 结果：5 [a e c d b]
+}
+
+// RemoveDuplicateForSortSlice 删除有序slice的重复元素，必须是有序的slice
+// 思路：从slice的索引i开始，第i和i+1索引对应值两两比较，如果值相等，
+// 删除i+1对应的值，如果不相等，比较下一组i和i+1，直到索引i到倒数第二个索引时，结束循环。
+func RemoveDuplicateForSortSlice(slice []string) int {
+	for i := 0; i <= len(slice)-2; {
+		if slice[i] == slice[i+1] {
+			slice = append(slice[:i], slice[i+1:]...)
+		} else {
+			i++
+		}
+	}
+
+	return len(slice)
+
+	// 结果：5 [a b c d e]
+}
+
+
 func main() {
 	compare("比较两个slice的顺序")
 	equal("判断两个slice是否相等")
@@ -311,6 +345,16 @@ func main() {
 	fields("以空白间隔拆分slice")
 	split("slice拆分")
 	join("二维slice以指定的分割符连接为一维的slice")
-	removeDuplicate("去除相同的元素")
 	randSlice("打乱slice元素的顺序")
+
+	fmt.Printf("\n\n----------------- 删除slice中相同的元素 -----------------\n")
+	slice := []string{"a", "e", "c", "a", "d", "c", "b"}
+	fmt.Println(RemoveDuplicate1(slice))
+
+	slice = []string{"a", "e", "c", "a", "d", "c", "b"}
+	fmt.Println(slice[:RemoveDuplicate2(slice)])	// 推荐使用
+
+	slice = []string{"a", "e", "c", "a", "d", "c", "b"}
+	sort.Strings(slice)
+	fmt.Println(slice[:RemoveDuplicateForSortSlice(slice)])
 }
