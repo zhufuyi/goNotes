@@ -4,7 +4,7 @@ import "fmt"
 
 type Student struct {
 	*People
-	Age int
+	School string
 }
 
 type WhoSay interface {
@@ -30,18 +30,18 @@ func (a *Animal) Say() {
 func main() {
 	// 类似继承
 	stu := &Student{
-		&People{"Zhangsan"},
-		11,
+		&People{"张三"},
+		"小学",
 	}
-	fmt.Println(stu.Name, stu.Age)
+	fmt.Println(stu.Name, stu.School)
 	stu.Say() // 继承了方法
 
 	// 类似多态
 	var ws WhoSay
 
-	ws = &People{"Lisi"}
+	ws = &People{"李四"}
 	ws.Say()
 
-	ws = &Animal{"Dog"}
+	ws = &Animal{"狗"}
 	ws.Say()
 }
