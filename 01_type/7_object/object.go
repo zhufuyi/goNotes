@@ -31,7 +31,7 @@ func main() {
 	// 类似继承
 	stu := &Student{
 		&People{"张三"},
-		"小学",
+		"xxx小学",
 	}
 	fmt.Println(stu.Name, stu.School)
 	stu.Say() // 继承了方法
