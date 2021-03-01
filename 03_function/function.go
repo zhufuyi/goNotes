@@ -34,11 +34,6 @@ func anyTypeJustPara(args ...interface{}) { //任意类型不定参数
 	}
 }
 
-// 匿名函数，把函数当做一个类型
-var areaFuc = func(c float32) float32 {
-	return 3.14 * c * c
-}
-
 func main() {
 	fmt.Println("1 多返回值函数：")
 	add, mul := mulReturnVal(5, 6)
@@ -53,6 +48,23 @@ func main() {
 	tp3 := "hello"
 	anyTypeJustPara(tp1, tp2, tp3)
 
+	// 匿名函数
+	areaFuc := func(c float32) float32 {
+		return 3.14 * c * c
+	}
 	fmt.Println("\n4 匿名函数：")
 	fmt.Println("area =", areaFuc(10))
+
+	fmt.Println("\n5 函数作为类型：")
+	type xFunc func(a,b int) int // 函数作为类型
+
+	var sf xFunc = func(a, b int) int {
+		return a+b
+	}
+
+	var mf xFunc = func(a, b int) int {
+		return a*b
+	}
+
+	fmt.Println(sf(1,2),mf(1,2))
 }

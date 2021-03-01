@@ -14,12 +14,23 @@ func production(ch chan int) {
 	close(ch)
 }
 
-// 协程2 从通道读取数据
+// 协程2 从通道读取数据来消费
 func consumption(ch chan int) {
 	for val := range ch {
 		fmt.Printf("%d ", val)
 		time.Sleep(time.Millisecond * 200)
 	}
+
+	//for {
+	//	select {
+	//	case val, ok := <-ch:
+	//		if !ok {
+	//			return
+	//		}
+	//		fmt.Printf("%d ", val)
+	//		time.Sleep(time.Millisecond * 200)
+	//	}
+	//}
 }
 
 func main() {
